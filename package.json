@@ -1,7 +1,7 @@
 {
   "name": "react-use-slot",
   "version": "0.0.1",
-  "description": "",
+  "description": "Slot and outlet for React",
   "main": "lib/index.js",
   "scripts": {
     "watch": "tsc --declaration src/module/index.ts --outDir lib -w",
