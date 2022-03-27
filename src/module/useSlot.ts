@@ -1,28 +1,28 @@
-import { createElement, Fragment, ReactNode } from "react";
+import { createElement, cloneElement, Fragment, ReactNode } from "react";
 import { Children } from "react";
-
-declare namespace JSX {
-  interface IntrinsicAttributes {
-    slot?: string;
-  }
-}
 
 const useSlot = (children: ReactNode) => {
   const slots = Children.toArray(children).reduce<
     Record<string, ReturnType<typeof Children.toArray>>
   >((slots, child) => {
-    const slotName: string =
-      typeof child === "object" && "props" in child && child.props.slot
-        ? child.props.slot
-        : "default";
+    if (typeof child === "object" && "props" in child && child.props.slot) {
+      const slotName = child.props.slot;
+      return {
+        ...slots,
+        [slotName]: [
+          ...(slots[slotName] ?? []),
+          cloneElement(child, { slot: undefined })
+        ]
+      };
+    }
 
     return {
       ...slots,
-      [slotName]: [...(slots[slotName] ?? []), child]
+      default: [...(slots["default"] ?? []), child]
     };
   }, {});
 
-  return ({ name = 'default' }: { name?: string }) =>
+  return ({ name = "default" }: { name?: string }) =>
     createElement(Fragment, {}, slots[name]);
 };
 
