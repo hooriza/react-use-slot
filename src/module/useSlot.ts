@@ -16,7 +16,7 @@ const createSlot = (
 }: SlotProps) => {
   let slot = slots[name];
 
-  if (data && slot) {
+  if (typeof data !== 'undefined' && slot) {
     slot = slot.map((child) =>
       typeof child === "object" && "props" in child
         ? cloneElement(child, {}, child.props.children(data))
