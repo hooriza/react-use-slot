@@ -29,12 +29,17 @@ const MyComponent = ({ children }) => {
       <header>
         <Slot name="header" />
       </header>
-      <section className="content">
+      <main className="content">
         <Slot />
-      </section>
+      </main>
       <footer>
         <Slot name="footer" />
       </header>
+      <button>
+        <Slot name="button">
+          fallback
+        </Slot>
+      </button>
     </div>
   );
 };
@@ -46,12 +51,15 @@ const MyComponent = ({ children }) => {
   <header>
     <div>HEADER</div>
   </header>
-  <section class="content">
+  <main class="content">
     CONTENT
-  </section>
+  </main>
   <footer>
     <p>FOOTER</p>
   </footer>
+  <button>
+    fallback
+  </button>
 </div>
 ```
 

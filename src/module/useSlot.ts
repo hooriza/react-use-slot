@@ -22,8 +22,8 @@ const useSlot = (children: ReactNode) => {
     };
   }, {});
 
-  return ({ name = "default" }: { name?: string }) =>
-    createElement(Fragment, {}, slots[name]);
+  return ({ name = "default", children }: { name?: string, children?: ReactNode }) =>
+    createElement(Fragment, {}, slots[name] ?? children);
 };
 
 export default useSlot;

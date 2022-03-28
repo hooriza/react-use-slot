@@ -18,6 +18,12 @@ const MyComponent = ({ children }: { children: ReactNode }) => {
         <legend>default</legend>
         <Slot />
       </fieldset>
+      <fieldset>
+        <legend>fallback</legend>
+        <Slot name="fallback">
+          fallback
+        </Slot>
+      </fieldset>
     </div>
   );
 };

@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className="App">
       <MyComponent>
-        <h1 slot="header">H1 in <code>header</code> slot</h1>
+        <h1 className="foo" slot="header">H1 in <code>header</code> slot</h1>
         <h1>H1 in <code>default</code> slot</h1>
         <h2>H2 in <code>default</code> slot</h2>
         <Fragment slot="header">
