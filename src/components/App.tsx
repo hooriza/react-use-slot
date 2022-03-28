@@ -19,6 +19,9 @@ const App = () => {
         world
         <strong>strong in <code>default</code> slot</strong>
         <div>div in <code>default</code> slot</div>
+        <li slot="listitem">
+          {(item: string) => <Fragment>{item}</Fragment>}
+        </li>
       </MyComponent>
     </div>
   );

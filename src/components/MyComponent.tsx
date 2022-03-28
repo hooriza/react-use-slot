@@ -24,6 +24,14 @@ const MyComponent = ({ children }: { children: ReactNode }) => {
           fallback
         </Slot>
       </fieldset>
+      <fieldset>
+        <legend>loop</legend>
+        <ul>
+          {['foo', 'bar', 'baz'].map((item, index) => {
+            return <Slot key={index} name="listitem" data={item} />;
+          })}
+        </ul>
+      </fieldset>
     </div>
   );
 };
