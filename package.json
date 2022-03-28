@@ -2,6 +2,11 @@
   "name": "react-use-slot",
   "version": "0.1.0",
   "description": "Slot and outlet for React",
+  "homepage": "https://github.com/hooriza/react-use-slot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hooriza/react-use-slot.git"
+  },
   "main": "lib/index.js",
   "scripts": {
     "watch": "tsc --declaration src/module/index.ts --outDir lib -w",
