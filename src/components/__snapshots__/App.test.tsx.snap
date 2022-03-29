@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test with sample code 1`] = `
+<div
+  className="App"
+>
+  <div>
+    <fieldset>
+      <legend>
+        header
+      </legend>
+      <h1
+        className="foo"
+      >
+        H1 in 
+        <code>
+          header
+        </code>
+         slot
+      </h1>
+      Fragment in 
+      <code>
+        header
+      </code>
+       slot
+    </fieldset>
+    <fieldset>
+      <legend>
+        world
+      </legend>
+      <h2>
+        H2 in 
+        <code>
+          world
+        </code>
+         slot
+      </h2>
+    </fieldset>
+    <fieldset>
+      <legend>
+        default
+      </legend>
+      <h1>
+        H1 in 
+        <code>
+          default
+        </code>
+         slot
+      </h1>
+      <h2>
+        H2 in 
+        <code>
+          default
+        </code>
+         slot
+      </h2>
+      1234
+      hello
+      world
+      <strong>
+        strong in 
+        <code>
+          default
+        </code>
+         slot
+      </strong>
+      <div>
+        div in 
+        <code>
+          default
+        </code>
+         slot
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>
+        fallback
+      </legend>
+      fallback
+    </fieldset>
+    <fieldset>
+      <legend>
+        loop
+      </legend>
+      <ul>
+        <li>
+          foo
+        </li>
+        <li>
+          bar
+        </li>
+        <li>
+          baz
+        </li>
+      </ul>
+    </fieldset>
+  </div>
+</div>
+`;

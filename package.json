@@ -12,7 +12,7 @@
     "watch": "tsc --declaration src/module/index.ts --outDir lib -w",
     "build": "tsc --declaration src/module/index.ts --outDir lib",
     "sample": "react-scripts start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "react-scripts test"
   },
   "keywords": [
     "react",
@@ -42,5 +42,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.23",
+    "@types/react-test-renderer": "^17.0.1",
+    "jest": "^27.5.1",
+    "react-test-renderer": "^17.0.2"
   }
 }
