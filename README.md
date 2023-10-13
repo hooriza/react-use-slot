@@ -127,7 +127,7 @@ const MyComponent = ({ children }) => {
       </main>
       <footer>
         <Slot name="footer" />
-      </header>
+      </footer>
     </div>
   );
 };
@@ -156,8 +156,8 @@ There are cases when the parent scope needs data provided from the child.
 In this case, how to show the data with slot?
 
 ```jsx
-const List = () => {
-  const Slot = useSlot();
+const List = ({ children }) => {
+  const Slot = useSlot(children);
   const dataList = ['foo', 'bar', 'baz'];
 
   return (
@@ -180,8 +180,8 @@ const List = () => {
 You can do it like below.
 
 ```jsx
-const List = () => {
-  const Slot = useSlot();
+const List = ({ children }) => {
+  const Slot = useSlot(children);
   const dataList = ['foo', 'bar', 'baz'];
 
   return (
