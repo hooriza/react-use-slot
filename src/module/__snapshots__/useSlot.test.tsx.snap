@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FancyButton 1`] = `
+<button
+  className="fancy-btn"
+>
+  Click me!
+</button>
+`;
+
+exports[`List 1`] = `
+Array [
+  <header>
+    <h1>
+      Title
+    </h1>
+  </header>,
+  <ul>
+    <li>
+      How to show data??
+    </li>
+    <li>
+      How to show data??
+    </li>
+    <li>
+      How to show data??
+    </li>
+  </ul>,
+]
+`;
+
+exports[`List with data 1`] = `
+Array [
+  <header>
+    <h1>
+      Title
+    </h1>
+  </header>,
+  <ul>
+    <li>
+      foo
+    </li>
+    <li>
+      bar
+    </li>
+    <li>
+      baz
+    </li>
+  </ul>,
+]
+`;
+
+exports[`SubmitButton 1`] = `
+<button
+  type="submit"
+>
+  Submit
+</button>
+`;
+
+exports[`SubmitButton 2`] = `
+<button
+  type="submit"
+>
+  Save
+</button>
+`;
+
+exports[`SubmitButton 3`] = `
+<div
+  className="my-component"
+>
+  <header>
+    <div>
+      HEADER
+    </div>
+  </header>
+  <main
+    className="content"
+  >
+    CONTENT
+  </main>
+  <footer>
+    <p>
+      FOOTER
+    </p>
+  </footer>
+</div>
+`;
